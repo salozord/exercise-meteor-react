@@ -4,28 +4,28 @@ import '../styles/DayForecast.css';
 export default class DayForecast extends Component {
   
   getImage() {
-    let image = {};
+    let image = '';
       switch (this.props.report.status) {
         case 'Mostly sunny':
-          image = (<img className="card-img" src="mostly sun.png" />);
+          image = 'mostly sun.png';
           break;
         case 'Cloudy':
-          image = (<img className="card-img" src="cloudy.png" />);
+          image = 'cloudy.png';
           break;
         case 'Foggy':
-          image = (<img className="card-img" src="fog.png" />);
+          image = 'fog.png';
           break;
         case 'Sunny':
-          image = (<img className="card-img" src="sun.png" />);
+          image = 'sun.png';
           break;
         case 'Very Sunny':
-          image = (<img className="card-img" src="sun.png" />);
+          image = 'sun.png';
           break;
         case 'Rainy':
-          image = (<img className="card-img" src="rain.png" />);
+          image = 'rain.png';
           break;
         case 'Snowie':
-          image = (<img className="card-img" src="snow.png" />);
+          image = 'snow.png';
           break;
       }
     return image;
@@ -33,9 +33,8 @@ export default class DayForecast extends Component {
 
   render() {
     return (
-      // <div className="col-sm">
         <div className="card bg-white">
-          {this.getImage()}
+          <img className="card-img" src={this.getImage()} />
           <div className="card-img-overlay">
             <h5 className="card-title text-right">{this.props.report.dayName}</h5>
           </div>
@@ -44,7 +43,6 @@ export default class DayForecast extends Component {
             <p className="text-muted text-right small">{this.props.report.status}</p>
           </div>
         </div>
-      // </div>
     );
   }
 }

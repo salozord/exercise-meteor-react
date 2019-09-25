@@ -15,7 +15,7 @@ class WeekForecast extends Component {
   render() {
     return (
       <div className="col-12">
-        <h4 className="d-block text-center gb-light">week { this.props.number }</h4>
+        <h4 className="d-block text-center gb-light pt-1">week { this.props.number }</h4>
         <div className="row justify-content-around">
           {this.renderDays()}
         </div>

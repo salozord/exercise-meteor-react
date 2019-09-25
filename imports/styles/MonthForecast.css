@@ -1,6 +1,11 @@
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+nav {
+    background-color: #41748C;
+    color: white;
 }
 
 .rest {

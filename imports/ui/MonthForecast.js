@@ -18,14 +18,16 @@ class MonthForecast extends Component {
 
   render() {
     return (
+    <div>
+      <nav className="text-center">
+        <h1 className="text-bold">Week Forecasts - Random Month</h1>
+      </nav>
       <div className="container-fluid">
-        <header className="nav navbar-nav bg-white text-center">
-          <h1>Week Forecasts - Random Month</h1>
-        </header>
         <div className="row rest">
             {this.renderWeeks()}
         </div>
       </div>
+    </div>
     );
   }
 }
